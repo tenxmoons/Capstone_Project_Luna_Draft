@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#loginHelpForm {
+    /* height: 500px;
+    width: 520px; */
+    /* box-sizing: border-box;
+    background-color: #F9F4E8;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    background-image: url(./images/loginANDsignupBanner.png);
+    background-repeat: no-repeat;
+    background-size:500px 500px;
+    border: black thick double; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(77, 77, 102, 0.8);
+}
+
+ #loginHelpForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background-color: #F9F4E8;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    background-image: url(./images/loginANDsignupBanner.png);
+    background-repeat: no-repeat;
+    background-size:500px 500px;
+    border: black thick double;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loginHelpForm h1 {
+    padding-bottom: 40px;
+}
+
+#loginHelpForm input {
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color:#358C56;
+}
+
+#loginHelpForm button {
+    margin-top: 15px;
+    border: none;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    /* background-color: transparent; */
+    height: 40px;
+    width: 300px;
+    /* border: none; */
+    background-color: #358C56;
+    color: #f8f3e6;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:#358C56;
+    /* background-color: transparent; */
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+#LoginData {
+    display: flex;
+    /* background-color: blue; */
+    width:100%;
+    height: 100%;
+}
+
+#Login-Photo {
+    width: calc(100%/2);
+}
+
+#Login-Photo img {
+    height: 100%;
+    width: 769px;
+}
+
+#login-container {
+    /* border-left: dotted; */
+    width: calc(100%/2);
+    position: relative;
+    /* padding: 40px 80px 80px 80px; */
+    /* background-image: url(./images/loginANDsignupBanner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,243,230,1) 100%); */
+}
+
+#login-container img {
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    top: -65px;
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,243,230,1) 100%);
+}
+
+#right-side {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    /* margin: 43px; */
+    padding: 30px 150px 40px 150px;
+    text-align: center;
+    /* background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,243,230,1) 100%); */
+}
+
+#login-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+    /* background-color: brown; */
+}
+
+#login-user-data input {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: #358C56;
+    font-size: 13px;
+    position: relative;
+    left: 10px;
+    /* bottom: 5px; */
+}
+
+#right-side input {
+    /* height: 25px; */
+    background-color: transparent;
+    border-radius: 10px;
+    border-color:#358C56;
+
+}
+
+#login-user-data {
+    /* background-color: darkkhaki; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#help-user {
+    /* background-color: darkorange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#help-user button {
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    /* background-color: transparent; */
+    height: 40px;
+    width: 400px;
+    /* border: none; */
+    background-color: #358C56;
+    color: #f8f3e6;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:#358C56;
+    /* background-color: transparent; */
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+#help-user button:hover {
+    background-color: #56b87a;
+}
+
+#login-another-way {
+    text-align: center;
+    /* background-color: rgb(210, 30, 150); */
+    margin-bottom: 20px;
+}
+
+#Alt-Sign-in-Options {
+    /* background-color: darkgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#Alt-Sign-in-Options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    /* background-color: transparent; */
+    height: 40px;
+    width: 220px;
+    /* border: none; */
+    background-color: #358C56;
+    color: #f8f3e6;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:#358C56;
+    /* background-color: transparent; */
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+#Alt-Sign-in-Options button:hover {
+    background-color: #56b87a;
+}
+
+#Link-To-SignUp {
+    /* background-color: deepskyblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Link-To-SignUp button {
+    margin-top: 60px;
+    height: 40px;
+    width: 220px;
+    /* border: none; */
+    background-color: #358C56;
+    color: #f8f3e6;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:#358C56;
+    /* background-color: transparent; */
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+#Link-To-SignUp button:hover {
+    background-color: #56b87a;
+}
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./LoginPageDesign.css">
+    <title>EventPrism - Log In</title>
+</head>
+<body onload="forgetEmailOrPasswordOpenForm('hide')">
+    <div id="LoginData">
+        <div id='Login-Photo'>
+            <img src="./images/loginPhotoToUse.jpeg" alt="Friends Painting">
+        </div>
+        <div id='login-container'>
+                <figure id="testing">
+                    <img id="photo-to-use" src="./images/loginANDsignupBanner.png" alt="greek banner">
+                    <div id="right-side">
+                        <div id='login-title'>
+                            <h1>Log In</h1>
+                        </div>
+                        <div id='login-user-data'>
+                            <input type="text" id='User-Email' placeholder='Email Address' name="email" required>
+                            <input type="text" id='User-Password' placeholder='Password' name="password" required>
+                            <div id="help-user">
+                                <button type="submit" id='Login-Button'>Log In</button>
+                                <button id='Forgot-Button'onclick="forgetEmailOrPasswordOpenForm('show')">Forgot Username/Password?</button>
+                            </div>
+                        </div>
+                        <div id='login-another-way'>
+                            <p> Want to log in another way? <br></br>
+                            Choose from below:
+                            </p>
+                        </div>
+                        <div id='Alt-Sign-in-Options'>
+                            <a href="https://accounts.google.com/Login">
+                                <button id='Alt'>Sign in with Google</button>
+                            </a> 
+                            <a href="https://github.com/login">
+                                <button id='Alt'>Sign in with Github</button>
+                            </a>
+                        </div>
+                        <div id='Link-To-SignUp'>
+                            <a href="./SignUpPage.html">
+                                <button id='Send-To-SignUp'>
+                                    Click here to sign up!
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+    </div>
+    <div id="loginHelpForm" >
+        <form>
+            <h1>Let's get you back in!</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <button type="submit" id="btn">Send Log In Link</button>
+            <button type="button" id="btn" onclick="forgetEmailOrPasswordOpenForm('hide')">Back To Log In</button>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
